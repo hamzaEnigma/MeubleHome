@@ -35,8 +35,9 @@ namespace ProductFeature.Controllers
                 //if (listProducts.Count() == 0) return BadRequest("Produit n'esxiste pas");
                    
                 var dto = _mapper.Map<IEnumerable<ProductDTO>>(listproduct) ;
-
+                var x = 2;
                 return Ok(dto);
+
             }
             catch (Exception ex)
             {
